@@ -63,8 +63,10 @@ const Card = ({ card}) => {
        
         className="h-[60%] w-full object-cover absolute inset-0 overflow-hidden border-0"
       />
-      <motion.div   initial={{ y:"60%"}}
-        whileHover={{ y:"30%"}} className="w-full absolute hover:top-[30%] inset-0 z-10 bg-[#C9FD74]">
+      {/* <motion.div   initial={{ y:"60%"}}
+        whileHover={{ y:"30%"}} className="w-full absolute hover:top-[30%] top-[60%] z-10 bg-[#C9FD74]">
+       */}
+        <div className=" transition-transform duration-300 group-hover:top-[30%] w-full absolute hover:top-[30%] top-[60%] z-10 bg-[#C9FD74]">
         {/* <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
           {card.title}
         </p> */}
@@ -85,7 +87,7 @@ const Card = ({ card}) => {
         )})}
 
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
