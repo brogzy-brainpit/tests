@@ -10,9 +10,9 @@ function LandingTrusted({text,companies}) {
        <section className='grid-img slider-containe' style={{display:"flex"}}>
      
          <Marquee gradient={true}  >
-        {companies.map(({img})=>{
+        {companies.map(({img},index)=>{
           return (
-      <img style={{height:"90px",padding:"0px 25px"}} className='normal-ig' src={img}/>
+      <img key={index} style={{height:"90px",padding:"0px 25px"}} className='normal-ig' src={img}/>
           )
         })}
         </Marquee>
