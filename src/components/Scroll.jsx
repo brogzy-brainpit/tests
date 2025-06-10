@@ -11,12 +11,12 @@ import sms from "../../public/images/sms.png"
 import ui from "../../public/images/ui.png"
 
 const Example = () => {
-     const revealOptions={
-      initial:{y:"100%"},
-  enter:(index)=>({y:"0%",transition:{duration:0.3,delay:3}}),
-  exit:{y:"100%"}}
+  //    const revealOptions={
+  //     initial:{y:"100%"},
+  // enter:(index)=>({y:"0%",transition:{duration:0.3,delay:3}}),
+  // exit:{y:"100%"}}
   return (
-    <div className="bg-neutral-800">
+    <div className="bg-neutral-900">
       <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
         &nbsp;
@@ -25,7 +25,7 @@ const Example = () => {
       <HorizontalScrollCarousel />
       <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
-          Scroll up
+        &nbsp;
         </span>
       </div>
     </div>
