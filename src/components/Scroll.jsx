@@ -66,28 +66,29 @@ const Card = ({ card}) => {
       {/* <motion.div   initial={{ y:"60%"}}
         whileHover={{ y:"30%"}} className="w-full absolute hover:top-[30%] top-[60%] z-10 bg-[#C9FD74]">
        */}
-        <div className=" transition-transform duration-300 group-hover:top-[30%] w-full absolute hover:top-[30%] top-[60%] z-10 bg-[#C9FD74]">
-        {/* <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-          {card.title}
-        </p> */}
-        <div className=" w-full flex justify-between p-4  ">
-          <div className="flex flex-col">
-            <h2 className='font-custom leading-1 text-4xl capitalize text-black'>{card.title}</h2>
-          <h2 className='font-custom leading-1 text-4xl capitalize text-black'>{card.title2}</h2>
-          </div>
-          <h2 className='font-normal text-para text-black'>{card.id}</h2>
-        </div>
-        <div className="bg-slat-400 p-4 pt-0">
-        {card?.subSevice?.map(({title,logo},index)=>{
-          return (
-        <div key={index} className=" w-full flex items-center justify-between py-2  border-b ">
-          <h2 className='font-normal text-para text-black'>{title}</h2>
-          <img src={logo.src} className=' w-[40px] '/>
-        </div>
-        )})}
-
-        </div>
+       <div className="relative group w-full h-[400px] overflow-hidden">
+  {/* The animated child */}
+  <div className="transition-all duration-300 ease-in-out w-full absolute top-[60%] group-hover:top-[30%] z-10 bg-[#C9FD74]">
+    {/* Inner content */}
+    <div className="w-full flex justify-between p-4">
+      <div className="flex flex-col">
+        <h2 className='font-custom leading-1 text-4xl capitalize text-black'>{card.title}</h2>
+        <h2 className='font-custom leading-1 text-4xl capitalize text-black'>{card.title2}</h2>
       </div>
+      <h2 className='font-normal text-para text-black'>{card.id}</h2>
+    </div>
+
+    <div className="bg-slat-400 p-4 pt-0">
+      {card?.subSevice?.map(({ title, logo }, index) => (
+        <div key={index} className="w-full flex items-center justify-between py-2 border-b">
+          <h2 className='font-normal text-para text-black'>{title}</h2>
+          <img src={logo.src} className='w-[40px]' />
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };
