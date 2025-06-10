@@ -30,7 +30,7 @@ function Section2() {
       offset:["0.6 end",'end 0.8']
     })
   return (
-   <section className='hero-section min-h-[calc(100vh-0px)]  '>
+   <section className='hero-section min-h-[calc(100vh-0px)] bg-white '>
      <div className="background-wrapper  py-[100px] px-4">
   <Image alt='backround-vid' src={snow}  className="background-video2"/>
 <div className='background-rgba'> &nbsp;</div>

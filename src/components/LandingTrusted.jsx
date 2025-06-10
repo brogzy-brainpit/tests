@@ -6,13 +6,13 @@ function LandingTrusted({text,companies}) {
 
  
   return (
-    <div className='landingTrusted' style={{display:"block",padding:" 30px 0px",background:"transparent"}}>
+    <div className='landingTrusted bg-white' style={{display:"block",padding:" 30px 0px",background:"transparent"}}>
        <section className='grid-img slider-containe' style={{display:"flex"}}>
      
-         <Marquee gradient={true}  >
+         <Marquee gradient={true} gradientWidth={140} >
         {companies.map(({img},index)=>{
           return (
-      <img key={index} style={{height:"90px",padding:"0px 25px"}} className='normal-ig' src={img}/>
+      <img key={index} style={{height:"70px",padding:"0px 25px"}} className='normal-ig' src={img}/>
           )
         })}
         </Marquee>

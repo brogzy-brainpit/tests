@@ -15,7 +15,7 @@ function Services() {
     });
   }, []);
   return (
-    <div className=' py-[60px] px-4 bg-#EBEFF6]'>
+    <div className=' py-[60px] px-4 bg-[#EBEFF6]'>
 
         <div className='breaker container items-center gap-[80px]'>
     <div data-aos={"fade-up"} data-aos-delay="0" data-aos-duration={1000}  className='breaker-child-01 flex-col flex gap-[6vh]'>
@@ -76,7 +76,7 @@ function Services() {
     </div> */}
 
 
-  <div className="text-black font-custom text-heading2 leading-[0.95] md:leading-[1] px-4 py-20">
+  <div className="text-black font-custom text-heading2 leading-[0.95] md:leading-[1] py-20">
       when&nbsp;
       <span ref={ref} className="relative inline-block px-2 py-1">
         <motion.span
