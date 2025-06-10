@@ -57,9 +57,9 @@ export default function Home() {
 ]}/>
       <OurNumbers/>
       <Section2 />
+    <Services/>
       <Scroll/>
       {/* <Intro /> */}
-    <Services/>
       <Description />
       
       <OutroImage/>
