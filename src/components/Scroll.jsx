@@ -57,14 +57,14 @@ const Card = ({ card}) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[400px] w-[400px] rounded-lg overflow-hidden cursor-pointer bg-neutral-200"
+      className="group relative h-[400px] w-[330px] md:w-[400px] rounded-lg overflow-hidden cursor-pointer bg-neutral-200"
     >
       <motion.img initial={{ scale:1}} whileHover={{scale:1.2}} transition={{ duration: 3.1, ease: 'easeInOut' }} src={card.url.src}
        
         className="h-[60%] w-full object-cover absolute inset-0 overflow-hidden border-0"
       />
       <motion.div   initial={{ y:"60%"}}
-        whileHover={{ y:"30%"}} className="w-full absolute top-[60% inset-0 z-10 bg-[#C9FD74]">
+        whileHover={{ y:"30%"}} className="w-full absolute hover:top-[30%] inset-0 z-10 bg-[#C9FD74]">
         {/* <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
           {card.title}
         </p> */}
