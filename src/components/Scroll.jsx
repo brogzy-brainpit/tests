@@ -76,12 +76,11 @@ const Card = ({ card}) => {
           <h2 className='font-normal text-para text-black'>{card.id}</h2>
         </div>
         <div className="bg-slat-400 p-4 pt-0">
-        {card?.subSevice?.map(({title,logo})=>{
+        {card?.subSevice?.map(({title,logo},index)=>{
           return (
-        <div className=" w-full flex items-center justify-between py-2  border-b ">
+        <div key={index} className=" w-full flex items-center justify-between py-2  border-b ">
           <h2 className='font-normal text-para text-black'>{title}</h2>
           <img src={logo.src} className=' w-[40px] '/>
-          
         </div>
         )})}
 
