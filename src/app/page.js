@@ -14,6 +14,7 @@ import OutroImage from '@/components/OutroImage';
 import Footer from '@/components/Footer';
 import OurNumbers from '@/components/OurNumbers';
 import LandingTrusted from '@/components/LandingTrusted';
+import Scroll from '@/components/Scroll';
 
 export default function Home() {
   
@@ -41,6 +42,7 @@ export default function Home() {
     {isLoading &&< Preloader/>}
     </AnimatePresence>
     <Header/>
+
       <Landing />
       <LandingTrusted text companies={[
   {img:"https://emailsyall.com/wp-content/uploads/2023/09/home_chef_ey.png"},
@@ -55,6 +57,7 @@ export default function Home() {
 ]}/>
       <OurNumbers/>
       <Section2 />
+      <Scroll/>
       {/* <Intro /> */}
     <Services/>
       <Description />
