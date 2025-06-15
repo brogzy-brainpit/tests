@@ -44,11 +44,11 @@ export default function Footer() {
               </div>
                
                 <div className='flex items-start md:items-end flex-col'>
-                 <motion.h2  whileHover={{color:"#C9FD74",x:2,cursor:"pointer"}} className=' flex items-center justify-center font-custom text-footer leading-[75px] text-white  text-left md:text-right'>
-                 <Phone className='mr-4 w-[50px] h-[50px]'/> +1(574)527-6228
+                 <motion.h2  whileHover={{color:"#C9FD74",x:2,cursor:"pointer"}} className=' flex items-center justify-center font-custom text-[30px] md:text-foote leading-[75px] text-white  text-left md:text-right'>
+                 <Phone className='mr-4 w-[30px] h-[30px] md:w-[50px] md:h-[50px] '/> +1(574)527-6228
                   </motion.h2>
-                <motion.h2 whileHover={{color:"#C9FD74",x:2,cursor:"pointer"}} className='flex items-center justify-center font-custom text-footer leading-[75px]  text-white text-left md:text-right'>
-                  <Mail  className='mr-4 w-[50px] h-[50px]'/> 
+                <motion.h2 whileHover={{color:"#C9FD74",x:2,cursor:"pointer"}} className='flex items-center justify-center font-custom text-[30px] md:text-footer leading-[75px]  text-white text-left md:text-right'>
+                  <Mail  className='mr-4 w-[30px] h-[30px] md:w-[50px] md:h-[50px] '/> 
                   colepaytonbaker
                   {/* <a href='mailto:colepaytonbaker@gmail.com' className=''>
                   </a> */}
