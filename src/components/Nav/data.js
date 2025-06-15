@@ -8,7 +8,7 @@ export const links = [
         href: "/"
     },
     {
-        title: "Expertise",
+        title: "Testimonials",
         href: "/"
     },
     {
@@ -20,6 +20,28 @@ export const links = [
         href: "/"
     }
 ]
+// export const links = [
+//     {
+//         title: "Projects",
+//         href: "/"
+//     },
+//     {
+//         title: "Agency",
+//         href: "/"
+//     },
+//     {
+//         title: "Expertise",
+//         href: "/"
+//     },
+//     {
+//         title: "Careers",
+//         href: "/"
+//     },
+//     {
+//         title: "Contact",
+//         href: "/"
+//     }
+// ]
 
 export const footerLinks = [
     {

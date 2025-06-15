@@ -16,12 +16,12 @@ const Example = () => {
   // enter:(index)=>({y:"0%",transition:{duration:0.3,delay:3}}),
   // exit:{y:"100%"}}
   return (
-    <div className="bg-neutral-900">
-      <div className="flex h-48 items-center justify-center">
+    <div className="bg-neutral-00">
+      {/* <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
         &nbsp;
         </span>
-      </div>
+      </div> */}
       <HorizontalScrollCarousel />
       <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
@@ -41,7 +41,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
+    <section ref={targetRef} className="relative h-[300vh] bg-eutral-900">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
@@ -95,146 +95,288 @@ const Card = ({ card}) => {
 
 export default Example;
 
+// const cards = [
+//   {
+//     url: service01,
+//     title: "email",
+//     title2: "design",
+//     id: 1,
+//     subSevice:[
+//       {
+//       title:"Welcome Series",
+//       logo:conversion
+//     },
+//      {
+//       title:"Abandoned Cart",
+//       logo:ui
+//     },
+//      {
+//       title:"Welcome Series",
+//       logo:sms
+//     },
+//   ]
+//   },
+//   {
+//     url: service02,
+//     title: "flow",
+//     title2: "automation",
+//     subSevice:[
+//       {
+//       title:"Welcome Series",
+//       logo:conversion
+//     },
+//      {
+//       title:"Abandoned Cart",
+//       logo:ui
+//     },
+//      {
+//       title:"Welcome Series",
+//       logo:sms
+//     },
+//   ],
+//     id: 2,
+//   },
+//   {
+//     url: service03,
+//     title: "A&B",
+//     title2: "Testing",
+//     subSevice:[
+//       {
+//       title:"Welcome Series",
+//       logo:conversion
+//     },
+//      {
+//       title:"Abandoned Cart",
+//       logo:ui
+//     },
+//      {
+//       title:"Welcome Series",
+//       logo:sms
+//     },
+//   ],
+//     id: 3,
+//   },
+//   {
+//     url: service04,
+//     title: "Campaign",
+//     title2: "Management",
+//     subSevice:[
+//       {
+//       title:"Welcome Series",
+//       logo:conversion
+//     },
+//      {
+//       title:"Abandoned Cart",
+//       logo:ui
+//     },
+//      {
+//       title:"Welcome Series",
+//       logo:sms
+//     },
+//   ],
+//     id: 4,
+//   },
+//   {
+//     url:service05,
+//     title: "Reports &",
+//     title2: "Analytics",
+//      subSevice:[
+//       {
+//       title:"Welcome Series",
+//       logo:conversion
+//     },
+//      {
+//       title:"Abandoned Cart",
+//       logo:ui
+//     },
+//      {
+//       title:"Welcome Series",
+//       logo:sms
+//     },
+//   ],
+//     id: 5,
+//   },
+//   {
+//     url: service01,
+//     title: "Klaviyo",
+//     title2: "Setup",
+//      subSevice:[
+//       {
+//       title:"Welcome Series",
+//       logo:conversion
+//     },
+//      {
+//       title:"Abandoned Cart",
+//       logo:ui
+//     },
+//      {
+//       title:"Welcome Series",
+//       logo:sms
+//     },
+//   ],
+    
+//     id: 6,
+//   },
+//   {
+//     url: service02,
+//     title: "Free",
+//     title2: "Audit",
+//     subSevice:[
+//       {
+//       title:"Welcome Series",
+//       logo:conversion
+//     },
+//      {
+//       title:"Abandoned Cart",
+//       logo:ui
+//     },
+//      {
+//       title:"Welcome Series",
+//       logo:sms
+//     },
+//   ],
+//     id: 7,
+//   },
+// ];
 const cards = [
   {
     url: service01,
-    title: "email",
-    title2: "design",
+    title: "Brand",
+    title2: "Positioning",
     id: 1,
-    subSevice:[
+    subSevice: [
       {
-      title:"Welcome Series",
-      logo:conversion
-    },
-     {
-      title:"Abandoned Cart",
-      logo:ui
-    },
-     {
-      title:"Welcome Series",
-      logo:sms
-    },
-  ]
+        title: "Real Estate Brand Voice",
+        logo: conversion,
+      },
+      {
+        title: "Visual Identity Strategy",
+        logo: ui,
+      },
+      {
+        title: "Messaging Alignment",
+        logo: sms,
+      },
+    ],
   },
   {
     url: service02,
-    title: "flow",
-    title2: "automation",
-    subSevice:[
-      {
-      title:"Welcome Series",
-      logo:conversion
-    },
-     {
-      title:"Abandoned Cart",
-      logo:ui
-    },
-     {
-      title:"Welcome Series",
-      logo:sms
-    },
-  ],
+    title: "Lead",
+    title2: "Funnels",
     id: 2,
+    subSevice: [
+      {
+        title: "Seller/Buyer Funnels",
+        logo: conversion,
+      },
+      {
+        title: "Nurture Sequences",
+        logo: ui,
+      },
+      {
+        title: "Local Market Capture",
+        logo: sms,
+      },
+    ],
   },
   {
     url: service03,
-    title: "A&B",
-    title2: "Testing",
-    subSevice:[
-      {
-      title:"Welcome Series",
-      logo:conversion
-    },
-     {
-      title:"Abandoned Cart",
-      logo:ui
-    },
-     {
-      title:"Welcome Series",
-      logo:sms
-    },
-  ],
+    title: "Copy &",
+    title2: "Content",
     id: 3,
+    subSevice: [
+      {
+        title: "Listing Descriptions",
+        logo: conversion,
+      },
+      {
+        title: "Social Media Captions",
+        logo: ui,
+      },
+      {
+        title: "Blog/SEO Articles",
+        logo: sms,
+      },
+    ],
   },
   {
     url: service04,
-    title: "Campaign",
-    title2: "Management",
-    subSevice:[
-      {
-      title:"Welcome Series",
-      logo:conversion
-    },
-     {
-      title:"Abandoned Cart",
-      logo:ui
-    },
-     {
-      title:"Welcome Series",
-      logo:sms
-    },
-  ],
+    title: "Social",
+    title2: "Campaigns",
     id: 4,
+    subSevice: [
+      {
+        title: "Instagram Reels Planning",
+        logo: conversion,
+      },
+      {
+        title: "Facebook Ad Copy",
+        logo: ui,
+      },
+      {
+        title: "Email Nurture Campaigns",
+        logo: sms,
+      },
+    ],
   },
   {
-    url:service05,
-    title: "Reports &",
-    title2: "Analytics",
-     subSevice:[
-      {
-      title:"Welcome Series",
-      logo:conversion
-    },
-     {
-      title:"Abandoned Cart",
-      logo:ui
-    },
-     {
-      title:"Welcome Series",
-      logo:sms
-    },
-  ],
+    url: service05,
+    title: "Market",
+    title2: "Insights",
     id: 5,
+    subSevice: [
+      {
+        title: "Real Estate Trends Report",
+        logo: conversion,
+      },
+      {
+        title: "Audience Behavior Insights",
+        logo: ui,
+      },
+      {
+        title: "Ad Campaign Analytics",
+        logo: sms,
+      },
+    ],
   },
   {
     url: service01,
-    title: "Klaviyo",
-    title2: "Setup",
-     subSevice:[
-      {
-      title:"Welcome Series",
-      logo:conversion
-    },
-     {
-      title:"Abandoned Cart",
-      logo:ui
-    },
-     {
-      title:"Welcome Series",
-      logo:sms
-    },
-  ],
-    
+    title: "Content",
+    title2: "Toolkit",
     id: 6,
+    subSevice: [
+      {
+        title: "Realtor Content Calendar",
+        logo: conversion,
+      },
+      {
+        title: "Property Highlight Templates",
+        logo: ui,
+      },
+      {
+        title: "Email Scripts Pack",
+        logo: sms,
+      },
+    ],
   },
   {
     url: service02,
-    title: "Free",
-    title2: "Audit",
-    subSevice:[
-      {
-      title:"Welcome Series",
-      logo:conversion
-    },
-     {
-      title:"Abandoned Cart",
-      logo:ui
-    },
-     {
-      title:"Welcome Series",
-      logo:sms
-    },
-  ],
+    title: "Strategy",
+    title2: "Session",
     id: 7,
+    subSevice: [
+      {
+        title: "Brand Audit & Clarity",
+        logo: conversion,
+      },
+      {
+        title: "Lead Generation Plan",
+        logo: ui,
+      },
+      {
+        title: "Content Strategy Outline",
+        logo: sms,
+      },
+    ],
   },
 ];

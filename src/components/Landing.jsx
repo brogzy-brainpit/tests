@@ -50,7 +50,9 @@ function Landing() {
         },[])
 
   return (
-   <section className='hero-section h-[calc(100vh-0px)] md:p-[30px] '>
+    // <div className='h-full w-full bg-[#EBEFF6]  -z-20 '>
+
+   <section className=' hero-section h-[calc(100vh-0px)] md:p-[30px] '>
      <div class="background-wrapper">
   <video autoPlay muted loop playsInline className="background-video">
    <source src="/videos/hero.mp4" type="video/mp4" />
@@ -60,15 +62,17 @@ function Landing() {
 <div class="content flex justify-center items-center h-full flex-col gap-4 p-4">
 {!wait && 
   <div class=" w-fit b-slate-50 content flex justify-end md:justify-center items-center h-full flex-col gap-4">
-            <h1 className="font-custom text-heading leading-[0.95] md:leading-[100px]' uppercase text-center max-w-[80vw] md:max-w-[40vw] gap-3 flex items-center justify-center flex-wrap">
+            <h1 className="font-custom text-heading leading-[0.85] md:leading-[90px]' uppercase text-center max-w-[80vw] md:max-w-[40vw] gap-3 flex items-center justify-center flex-wrap">
    <SlideUpText duration={0.30} delay={0.10} className=" capitalize font-custom text-heading inline-flex overflow-hidden" 
-   text={` Your Key to Digital Marketing`}/>
+   text={` Your Key to Content Marketing`}/>
        </h1>
-<p className='font-normal text-para text-center max-w-[96vw] md:max-w-[40vw]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi suscipit distinctio, a necessitatibus id vero beatae sit? Sapiente?</p>
+<p className='font-normal text-para text-center max-w-[96vw] md:max-w-[40vw]'>
+  World-class content for high-growth real estate investment firms. We combine editorial newsletters, social and long-form, ICP-centered content to build and drive pipeline - making your content work as har d as you do.
+</p>
 <RoundedButton>
-  <p className='font-normal text-button ls-05'>
-  Learn More
-  </p>
+  <Link href={'/contact'}  className='font-normal text-button ls-05'>
+  Apply Now
+  </Link>
 </RoundedButton>
   </div>
 
@@ -145,6 +149,7 @@ function Landing() {
 
 </div>
    </section>
+    //  </div>
 
   )
 }

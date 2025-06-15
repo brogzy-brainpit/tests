@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import Menu from "./Menu.jsx"
+// import logo from "../../public/images/logo.png"
+import logo from "../../public/images/logo.svg"
+import ThemeToggle from './DarkModeToggle.jsx'
+import Image from 'next/image.js'
 
 function Header() {
     const [isScrolled, setIsScrolled]=useState(false)
@@ -29,10 +33,13 @@ function Header() {
 <div className={`block w-full text-center relative transition-all duration-300 ease-in-out px-4 ${isScrolled?"py-4":"py-[20px] md:py-[40px]"}`}>
 <div className='flex justify-between  relative w-full'>
     <Link prefetch href={"/"} className='text-center font-custom text-2xl inline-block tracking-normal'>
-<h1 className='my-0 text-center text-white'  > 
+{/* <h1 className='my-0 text-center text-white'  > 
    Logo
-</h1>
+</h1> */}
+<Image src={logo} className='w-[120px]'/>
 </Link>
+
+{/* <ThemeToggle/> */}
 <Menu/>
 </div>
 

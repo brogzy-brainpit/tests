@@ -3,6 +3,7 @@ import RoundedButton from "../app/common/RoundedButton";
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { useInView,motion } from 'framer-motion';
+import Scroll from '@/components/Scroll';
 
 function Services() {
   const ref = useRef(null);
@@ -15,15 +16,15 @@ function Services() {
     });
   }, []);
   return (
-    <div className=' py-[60px] px-4 bg-[#EBEFF6]'>
+    <div className=' pt-[60px] px-4 bg-[#EBEFF6'>
 
         <div className='breaker container items-center gap-[80px]'>
     <div data-aos={"fade-up"} data-aos-delay="0" data-aos-duration={1000}  className='breaker-child-01 flex-col flex gap-[6vh]'>
-<p className='font-normal text-para text-black'>
+<p className='font-normal text-para text-white'>
     Our Services
     </p>
    
-     {/* <div class=" blur-[9.43px text-black font-custom text-heading2 leading-[0.95] md:leading-[1]" >
+     {/* <div class=" blur-[9.43px text-white font-custom text-heading2 leading-[0.95] md:leading-[1]" >
   when&nbsp;
   <span class="relative inline-block pb-2">
     Conversion
@@ -44,7 +45,7 @@ function Services() {
 </div> */}
 
 
-  {/* <div className="text-black font-custom text-heading2 leading-[0.95] md:leading-[1] px-4 py-20">
+  {/* <div className="text-white font-custom text-heading2 leading-[0.95] md:leading-[1] px-4 py-20">
       when&nbsp;
       <span ref={ref} className="relative inline-block px-1 py-1">
         <span className="relative z-10">conversion</span>
@@ -68,7 +69,7 @@ function Services() {
             strokeLinejoin="round"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: isInView ? 1 : 0 }}
-            transition={{ duration: 1.8, ease: 'easeOut' }}
+            transition={{ duration: 1.8, ease: 'easeInOut' }}
           />
         </svg>
       </span>
@@ -76,14 +77,14 @@ function Services() {
     </div> */}
 
 
-  <div className="text-black font-custom text-heading2 leading-[0.95] md:leading-[1] py-20">
+  <div className="text-white font-custom text-heading2 leading-[0.95] md:leading-[1] py-20">
       when&nbsp;
       <span ref={ref} className="relative inline-block px-2 py-1">
         <motion.span
           className="relative z-10"
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 8 }}
-          transition={{ duration: 0.3, ease: 'easeOut' }}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
         >
           Conversion
         </motion.span>
@@ -107,7 +108,7 @@ function Services() {
             strokeLinejoin="round"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: isInView ? 1 : 0 }}
-            transition={{ duration: 1.5, ease: 'easeOut' }}
+            transition={{ duration: 0.7, ease: 'easeInOut' }}
           />
         </svg>
       </span>
@@ -146,18 +147,19 @@ function Services() {
   &nbsp;matters, choose memet
 </div> */}
 
-{/* <h2 className='blur-[9.43px text-black font-custom text-heading2 leading-[0.95] md:leading-[1]'>
+{/* <h2 className='blur-[9.43px text-white font-custom text-heading2 leading-[0.95] md:leading-[1]'>
     Maryann - Your trusted partner
     </h2 > */}
     </div>
     <div data-aos={"fade-up"} data-aos-delay="0" data-aos-duration={1000} className='breaker-child-02 w-[40%] pb-[40px]'>
-<p className='text-black text-para font-normal leading-[1.45] md:leading-[1.5]'>
+<p className='text-white text-para font-normal leading-[1.45] md:leading-[1.5]'>
    Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus esse, iure repudiandae quasi voluptate in odio impedit unde temporibus deserunt aut quo, obcaecati reiciendis quae quod tenetur, a corrupti.
    </p>
     </div>
   </div>
-  <div className='container flex m-auto my-[20px] md:my-[15vh]'>
+  {/* <div className='container flex m-auto my-[20px] md:my-[15vh]'>
     <div  className='breaker md:gap-4 gap-[60px]'>
+      <Scroll/>
         <div data-aos={"fade-up"} data-aos-delay="200" className=' bg-[#C9FD74] p-[30px] relative breaker-child rounded-2xl drop-shadow-lg'>
             <p className='text-black opacity-[0.43] absolute -top-[13%] right-2 font-custom text-[120px] leading-[120px]'>
                 01
@@ -206,12 +208,10 @@ function Services() {
               </p>
             </RoundedButton>
             </div>
-            
-        
+
 
     </div>
-
-  </div>
+  </div> */}
     </div>
   )
 }
