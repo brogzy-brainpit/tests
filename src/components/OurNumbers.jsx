@@ -12,7 +12,7 @@ function OurNumbers() {
 </div>
 
      <div className='breaker-child flex-1'>
-       <div className='breaker flex flex-col  w-full bged-400 justify-center items-center gap-0' >
+       <div className=' px-2 breaker flex flex-col  w-full bged-400 justify-center items-center gap-0' >
 <div className='breaker-chil flex w-full justify-betwee'>
   <div className='bg-green-30 p-2 border  border-b-0 border-gray-100 flex justify-center items-center flex-col flex-1'>
  <h2 className='font-custom text-heading text-white'>
