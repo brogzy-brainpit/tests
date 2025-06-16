@@ -84,7 +84,7 @@ function Landing() {
 
 }
 
-  <div ref={textRef} className='overflow-hidden absolute right-15%] top-[30%] bg-slate-30 hidden md:flex md:flex-row flex-col'>
+  <div ref={textRef} className='overflow-hidden absolute right-[15%] top-[30%] bg-slate-30 hidden md:flex md:flex-row flex-col'>
     <motion.div variants={reveal}  initial="initial" animate={inView?"enter":"exit"} exit="exit"  className='flex gap-8  md:flex-col flex-row justify-start items-center py-6 px-2'>
       <Magnetic className="cursor-pointer">
         <Link href={"/"} target='blank'>
