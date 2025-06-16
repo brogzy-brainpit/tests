@@ -60,7 +60,7 @@ function Landing() {
     Your browser does not support the video tag.
   </video>
 <div className='background-rgba'> &nbsp;</div>
-<div class="content flex justify-center items-center h-full flex-col gap-4 p-4">
+<div class="content flex justify-center items-center h-full flex-col gap-2 p-4">
 {!wait && 
   <div class="mt-8 w-fit b-slate-50 content flex justify-center items-center h-full flex-col gap-4">
             <h1 className="font-custom text-heading leading-[0.85] md:leading-[90px]' uppercase text-center max-w-[80vw] md:max-w-[40vw] gap-3 flex items-center justify-center flex-wrap">
@@ -84,7 +84,7 @@ function Landing() {
 
 }
 
-  <div ref={textRef} className='overflow-hidden absolute right-[15%] top-[30%] bg-slate-30 hidden md:flex md:flex-row flex-col'>
+  <div ref={textRef} className='overflow-hidden absolute right-15%] top-[30%] bg-slate-30 hidden md:flex md:flex-row flex-col'>
     <motion.div variants={reveal}  initial="initial" animate={inView?"enter":"exit"} exit="exit"  className='flex gap-8  md:flex-col flex-row justify-start items-center py-6 px-2'>
       <Magnetic className="cursor-pointer">
         <Link href={"/"} target='blank'>
