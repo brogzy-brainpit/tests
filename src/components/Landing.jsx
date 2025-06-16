@@ -8,6 +8,7 @@ import twitter from "../../public/images/twitter.png"
 import linkedin from "../../public/images/linkedin.png"
 import Magnetic from '@/app/effects/Magnetic'
 import Link from 'next/link'
+import CalModalButton from './CalModalButton'
 
 function Landing() {
   
@@ -61,7 +62,7 @@ function Landing() {
 <div className='background-rgba'> &nbsp;</div>
 <div class="content flex justify-center items-center h-full flex-col gap-4 p-4">
 {!wait && 
-  <div class=" w-fit b-slate-50 content flex justify-end md:justify-center items-center h-full flex-col gap-4">
+  <div class="mt-8 w-fit b-slate-50 content flex justify-center items-center h-full flex-col gap-4">
             <h1 className="font-custom text-heading leading-[0.85] md:leading-[90px]' uppercase text-center max-w-[80vw] md:max-w-[40vw] gap-3 flex items-center justify-center flex-wrap">
    <SlideUpText duration={0.30} delay={0.10} className=" capitalize font-custom text-heading inline-flex overflow-hidden" 
    text={` Your Key to Content Marketing`}/>
@@ -69,11 +70,16 @@ function Landing() {
 <p className='font-normal text-para text-center max-w-[96vw] md:max-w-[40vw]'>
   World-class content for high-growth real estate investment firms. We combine editorial newsletters, social and long-form, ICP-centered content to build and drive pipeline - making your content work as har d as you do.
 </p>
-<RoundedButton>
+<div className='flex gap-2'>
+  <RoundedButton>
   <Link href={'/contact'}  className='font-normal text-button ls-05'>
   Apply Now
   </Link>
 </RoundedButton>
+<RoundedButton >
+  <CalModalButton/>
+</RoundedButton>
+  </div>
   </div>
 
 }

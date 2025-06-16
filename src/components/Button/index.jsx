@@ -29,8 +29,8 @@ export default function Button({isActive, toggleMenu}) {
 function PerspectiveText({label}) {
     return (    
         <div className={styles.perspectiveText}>
-            <p className='font-normal'>{label}</p>
-            <p className='font-normal'>{label}</p>
+            <p className='font-normal text-neutral-800'>{label}</p>
+            <p className='font-normal text-neutral-800'>{label}</p>
         </div>
     )
 }
