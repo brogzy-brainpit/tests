@@ -43,8 +43,8 @@ export default function index() {
                             initial="initial"
                             animate="enter"
                             exit="exit"
-                            key={`f_${i}`} className="cursor-pointer"
-                            className='font-normal text- cursor-pointer text-neutral-800'
+                            key={`f_${i}`} 
+                            className='cursor-pointer font-normal text- cursor-pointer text-neutral-800'
                         >
                             {title}
                         </motion.a>
