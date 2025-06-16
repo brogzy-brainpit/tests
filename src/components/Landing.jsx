@@ -60,9 +60,9 @@ function Landing() {
     Your browser does not support the video tag.
   </video>
 <div className='background-rgba'> &nbsp;</div>
-<div class="content flex justify-center items-center h-full flex-col gap-2 p-4">
+<div class="content flex justify-center items-center h-full flex-col gap-2 p-8">
 {!wait && 
-  <div class="mt-8 w-fit b-slate-50 content flex justify-center items-center h-full flex-col gap-4">
+  <div class="mt-8 w-fit b-slate-50 content flex justify-center items-center h-ful flex-col gap-4">
             <h1 className="font-custom text-heading leading-[0.85] md:leading-[90px]' uppercase text-center max-w-[80vw] md:max-w-[40vw] gap-3 flex items-center justify-center flex-wrap">
    <SlideUpText duration={0.30} delay={0.10} className=" capitalize font-custom text-heading inline-flex overflow-hidden" 
    text={` Your Key to Content Marketing`}/>
